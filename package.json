@@ -4,6 +4,7 @@
   "description": "Logisticsportal",
   "main": "app.js",
   "scripts": {
+    "test": ""
   },
   "repository": {
     "type": "git",
