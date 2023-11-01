@@ -1,0 +1,22 @@
+{
+  "name": "logisticsportal",
+  "version": "1.0.0",
+  "description": "Logisticsportal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwmconsultancy/logisticsportal.git"
+  },
+  "author": "Rob Janssen - Rob Janssen Consultancy B.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwmconsultancy/logisticsportal/issues"
+  },
+  "homepage": "https://github.com/rwmconsultancy/logisticsportal#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
