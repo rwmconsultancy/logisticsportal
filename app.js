@@ -1,11 +1,21 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+const morganBody = require("morgan-body");
+const bodyparser = require("body-parser");
+const cookieParser = require("cookie-parser");
+
+const route = require("./routes/defaultroute");
+
+app.use(cookieParser());
+app.set("view engine", "ejs");
+app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static(__dirname + "/public"));
+
+app.use("/", route);    
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Logisticsportal running on port ${port}`);
 });
